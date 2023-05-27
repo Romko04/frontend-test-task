@@ -2,8 +2,9 @@
 @import './libs/normalize';
 @import './components/all';
 .container{
-  max-width: 956px;
+  max-width: 926px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .wrapper {
   display: flex;
