@@ -1,8 +1,11 @@
+import Header from './components/header.tsx';
 import './scss/app.scss';
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <div className='wrapper'>
+      <Header />
+    </div>
   );
 }
 
