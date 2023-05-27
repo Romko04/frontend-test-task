@@ -496,7 +496,7 @@ a {
   scale: 1.1;
 }
 .services__slide-text {
-  max-width: 221px;
+  width: 221px;
 }
 .services__swiper-wrapper {
   display: flex;
@@ -509,6 +509,15 @@ a {
     align-items: center;
     justify-content: center;
   }
+}
+
+.swiper__svg {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.swiper__svg img {
+  cursor: pointer;
 }
 
 .container {
@@ -562,4 +571,16 @@ a {
   letter-spacing: -0.02em;
   /* Cinza escuro */
   color: #363636;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.active {
+  height: 78.16px;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "../assets/img/header/logo.svg"
 import Instagram from "../assets/img/header/instagram.svg"
 import Facebook from "../assets/img/header/facebook.svg"
@@ -8,12 +8,33 @@ const Header = () => {
     const navigation: string[] = ['o que fazemos', 'como te ajudamos', 'fale conosco']
     const socialNetworks: string[] = [Instagram, Facebook]
     const [isActiveBurger, setIsActiveBurger] = useState(false);
+    const [isFixed, setIsFixed] = useState(false);
+    const headerRef = useRef<HTMLDivElement>(null);
 
     const handleBurgerClick = () => {
         setIsActiveBurger(!isActiveBurger);
     };
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollPosition = window.scrollY;
+          const headerHeight = headerRef.current?.offsetHeight || 0;
+    
+          if (scrollPosition > headerHeight) {
+            setIsFixed(true);
+          } else {
+            setIsFixed(false);
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
     return (
-        <header className="header">
+        <>
+        <div className={`${isFixed ? "active" : ""}`}></div>
+        <header className={`header ${isFixed ? "fixed" : ""}`} ref={headerRef}>
             <div className="header__container">
                 <section className="navigation">
                 <button onClick={handleBurgerClick} className={`header__burger ${isActiveBurger ? 'active' : ''}`}>
@@ -49,6 +70,7 @@ const Header = () => {
                 </section>
             </div>
         </header>
+        </>
     )
 }
 export default Header

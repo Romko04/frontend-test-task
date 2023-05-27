@@ -19,7 +19,7 @@
         }
     }
     &__slide-text{
-        max-width: 221px;
+        width: 221px;
     }
     &__swiper-wrapper{
         display: flex;
@@ -30,5 +30,13 @@
             align-items: center;
             justify-content: center;
         }
+    }
+}
+.swiper__svg{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    & img{
+        cursor: pointer;
     }
 }

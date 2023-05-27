@@ -58,3 +58,13 @@ letter-spacing: -0.02em;
 
 color: #363636;
 }
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10
+}
+.active{
+  height: 78.16px;
+}
