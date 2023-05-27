@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/frontend-test-task/static/css/main.2df5e6e2.css",
+    "main.js": "/frontend-test-task/static/js/main.39c1279e.js",
+    "static/js/787.18807a08.chunk.js": "/frontend-test-task/static/js/787.18807a08.chunk.js",
+    "static/media/gradient-blur.png": "/frontend-test-task/static/media/gradient-blur.8922342905cb99d77d8d.png",
+    "static/media/man.svg": "/frontend-test-task/static/media/man.18beb46e738530aac0cab2a77b0ff546.svg",
+    "static/media/noise.png": "/frontend-test-task/static/media/noise.e44f375087841d7c6c75.png",
+    "static/media/slide1.svg": "/frontend-test-task/static/media/slide1.fae00441e72e064d74ac573b90435358.svg",
+    "static/media/logo.svg": "/frontend-test-task/static/media/logo.adfb838a408e84804767209445de7fdc.svg",
+    "static/media/instagram.svg": "/frontend-test-task/static/media/instagram.f83eb9fdf968d9e8d97f2289ae18f3b3.svg",
+    "index.html": "/frontend-test-task/index.html",
+    "static/media/facebook.svg": "/frontend-test-task/static/media/facebook.d3fef47f2b7c14bcca32850bcb4c5c2a.svg",
+    "main.2df5e6e2.css.map": "/frontend-test-task/static/css/main.2df5e6e2.css.map",
+    "main.39c1279e.js.map": "/frontend-test-task/static/js/main.39c1279e.js.map",
+    "787.18807a08.chunk.js.map": "/frontend-test-task/static/js/787.18807a08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2df5e6e2.css",
+    "static/js/main.39c1279e.js"
+  ]
+}
