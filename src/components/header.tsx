@@ -33,7 +33,7 @@ const Header = () => {
       }, []);
     return (
         <>
-        <div className={`${isFixed ? "active" : ""}`}></div>
+        <div className={`${isFixed ? "active-header" : ""}`}></div>
         <header className={`header ${isFixed ? "fixed" : ""}`} ref={headerRef}>
             <div className="header__container">
                 <section className="navigation">
