@@ -4,6 +4,7 @@ import Header from './components/header';
 import './scss/app.scss';
 import Footer from './components/Footer/footer';
 import Banner from './components/banner';
+import Services from './components/services';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <main className="main">
         <Banner />
+        <Services />
       </main>
       <Footer />
     </div>
